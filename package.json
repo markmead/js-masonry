@@ -1,0 +1,19 @@
+{
+  "name": "js-masonry",
+  "version": "1.0.0",
+  "description": "Create masonry layouts based on your CSS grid values 🎉",
+  "keywords": [
+    "JavaScript Masonry",
+    "Masonry Layout",
+    "Grid Masonry",
+    "CSS Masonry"
+  ],
+  "module": "dist/masonry.esm.js",
+  "unpkg": "dist/masonry.min.js",
+  "scripts": {
+    "build": "node scripts/build.js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.14.53"
+  }
+}
