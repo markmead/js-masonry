@@ -4,6 +4,9 @@ Create masonry layouts based on your CSS grid values 🎉
 
 ![JS Masonry](https://user-images.githubusercontent.com/50486078/196979467-7dde0de1-4d4d-46af-88b0-3978e0dd6af4.jpg)
 
+**Using Alpine JS?** -
+[Use Alpine JS Masonry](https://github.com/markmead/alpinejs-masonry)
+
 ## Install
 
 ### With a CDN
@@ -111,4 +114,4 @@ This can be fixed by adding `align-items: flex-start` to the element with
 ![](https://img.shields.io/bundlephobia/min/data-masonry)
 ![](https://img.shields.io/npm/v/data-masonry)
 ![](https://img.shields.io/npm/dt/data-masonry)
-![](https://img.shields.io/github/license/markmead/data-masonry)
+![](https://img.shields.io/github/license/markmead/js-masonry)
