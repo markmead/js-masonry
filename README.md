@@ -24,11 +24,9 @@ npm install -D js-masonry
 ```
 
 ```js
-import masonry from 'js-masonry'
+import masonry from './dist/masonry.esm.js'
 
-document.addEventListener('DOMContentLoaded', () => masonry())
-
-Alpine.start()
+document.addEventListener('DOMContentLoaded', masonry())
 ```
 
 ## Example
@@ -92,6 +90,14 @@ content is being added dynamically.
 
 You can also trigger the `reload:masonry` on the window to trigger the masonry
 grid to reload.
+
+```js
+const reloadMasonry = new Event('reload:masonry', {
+  bubbles: true,
+})
+
+dispatchEvent(reloadMasonry)
+```
 
 ## Issues
 

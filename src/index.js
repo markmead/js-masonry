@@ -16,25 +16,11 @@ function buildMasonry(masonryGrid) {
 
   if (masonryOptions) {
     if (masonryOptions.includes("pollDuration:")) {
-      let tempMasonryOptions = masonryOptions.replace("pollDuration:", "*");
-
-      tempMasonryOptions = tempMasonryOptions.slice(
-        tempMasonryOptions.indexOf("*") + 1,
-        tempMasonryOptions.lastIndexOf("}")
-      );
-
-      pollDuration = Number(tempMasonryOptions.split(",")[0]);
+      pollDuration = getOption("pollDuration:", masonryOptions);
     }
 
     if (masonryOptions.includes("waitDuration:")) {
-      let tempMasonryOptions = masonryOptions.replace("waitDuration:", "*");
-
-      tempMasonryOptions = tempMasonryOptions.slice(
-        tempMasonryOptions.indexOf("*") + 1,
-        tempMasonryOptions.lastIndexOf("}")
-      );
-
-      waitDuration = Number(tempMasonryOptions.split(",")[0]);
+      waitDuration = getOption("waitDuration:", masonryOptions);
     }
   }
 
@@ -46,4 +32,15 @@ function buildMasonry(masonryGrid) {
 
   window.addEventListener("resize", () => useMasonry(masonryGrid));
   window.addEventListener("reload:masonry", () => useMasonry(masonryGrid));
+}
+
+function getOption(optionId, baseOptions) {
+  let tempMasonryOptions = baseOptions.replace(optionId, "*");
+
+  tempMasonryOptions = tempMasonryOptions.slice(
+    tempMasonryOptions.indexOf("*") + 1,
+    tempMasonryOptions.lastIndexOf("}")
+  );
+
+  return Number(tempMasonryOptions.split(",")[0]);
 }

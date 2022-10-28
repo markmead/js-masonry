@@ -1,5 +1,3 @@
 import masonry from "../src/index.js";
 
-document.addEventListener("DOMContentLoaded", () => {
-  masonry();
-});
+document.addEventListener("DOMContentLoaded", masonry());
