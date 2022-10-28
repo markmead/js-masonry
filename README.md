@@ -11,20 +11,20 @@ Create masonry layouts based on your CSS grid values 🎉
 ```html
 <script
   defer
-  src="https://unpkg.com/js-masonry@latest/dist/masonry.min.js"
+  src="https://unpkg.com/data-masonry@latest/dist/masonry.min.js"
 ></script>
 ```
 
 ### With a Package Manager
 
 ```shell
-yarn add -D js-masonry
+yarn add -D data-masonry
 
-npm install -D js-masonry
+npm install -D data-masonry
 ```
 
 ```js
-import masonry from './dist/masonry.esm.js'
+import masonry from 'data-masonry'
 
 document.addEventListener('DOMContentLoaded', masonry())
 ```
@@ -108,7 +108,7 @@ This can be fixed by adding `align-items: flex-start` to the element with
 
 ## Stats
 
-![](https://img.shields.io/bundlephobia/min/js-masonry)
-![](https://img.shields.io/npm/v/js-masonry)
-![](https://img.shields.io/npm/dt/js-masonry)
-![](https://img.shields.io/github/license/markmead/js-masonry)
+![](https://img.shields.io/bundlephobia/min/data-masonry)
+![](https://img.shields.io/npm/v/data-masonry)
+![](https://img.shields.io/npm/dt/data-masonry)
+![](https://img.shields.io/github/license/markmead/data-masonry)
